@@ -1,0 +1,348 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color:  antiquewhite;
+            color: rgb(9, 2, 70);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+          header {
+            background-color: #7ca2c9;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* SECCIÓN PRINCIPAL */
+        #inicio {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                      url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920') center/cover no-repeat;  
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        /* SECCIÓN API */
+        #api {
+            background-color: rgb(255, 255, 255);
+  
+        }
+        
+        .api-container {
+            text-align: center;    
+        }
+        
+        .api-content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+             align-items: center;
+            gap: 10px;
+            margin-top: 20px;            
+            margin-bottom: 20px;
+        }
+        
+        .api-input{
+            margin-bottom: 20px;
+            text-align: center;
+    
+        }
+
+        .api-item {
+            background-color: #d3d9df;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: left;
+        }
+        
+        .api-item:hover {
+            transform: translateY(-5px);
+        }
+        
+
+        .api-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .receta-info h2 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            text-align: center ;
+        }   
+        .receta-info p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .receta-info strong {
+           color: #2c3e50;
+        }
+
+        .ingredientes-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .ingredientes-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .instrucciones {
+            text-align: justify;
+            line-height: 1.8;
+        }
+      
+
+        #inputReceta{
+             width: 100%;
+             max-width: 600px;
+             padding: 12px 15px;
+             border: 2px solid #ddd;
+             border-radius: 5px;
+             font-size: 1rem;
+        }
+        
+        
+        #inputReceta:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .placeholder {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 18px;
+        }
+
+
+        /* SECCIÓN FORMULARIO */
+        #formulario {
+            background-color: #ecf0f1;
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #076fb5;
+        }
+        
+        input.valid, textarea.valid, select.valid {
+            border-color: #089743;
+        }
+
+        input.invalid, textarea.invalid, select.invalid {
+            border-color: #b71604;
+        }
+        
+        .error {
+            color: #b71604;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            min-height: 20px;
+             display: block;
+        }
+        
+        .success-message {
+            background-color: #089743;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+             display: none;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .nav-menu.active {
+                display: block;
+            }
+        }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Plantilla TP final JS</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#api">Tu Receta</a></li>
+                    <li><a href="#formulario">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bienvenido a Descubrir el Mundo de la Cocina</h1>
+                <p>Explora miles de recetas deliciosas de todo el mundo. Desde platos tradicionales hasta creaciones modernas.</p>
+                <a href="#api" class="btn">Explorar Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN API -->
+    <section id="api">
+        <div class="api-container">
+            <h2>Recetas Especiales para Tí</h2>
+            <p>Obten la receta mas deliciosa para preparar.</p>
+            
+            <div class="api-content" id="apiContent">
+                <input type="text" id="inputReceta" placeholder="Ingresa el nombre de una receta"   >
+                <button id="cargarRecetas" class="btn" style="margin-top: 30px;">Cargar Recetas</button>  
+            </div>
+                  <div id="receta"></div>      
+        </div>
+    </section>
+
+    <!-- SECCIÓN FORMULARIO -->
+    <section id="formulario">
+        <div class="container">
+            <div class="form-container">
+                <h2>Formulario de Contacto</h2>
+                <p>Completa el formulario para ponerte en contacto con nosotros.</p>
+                
+               
+                <form id="contactForm">
+                <!--NOMBRE-->
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <div class="error" id="errorNombre"></div>
+                    </div>
+                <!--EMAIL-->    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email">
+                        <div class="error" id="errorEmail"></div>
+                    </div>
+                <!--ASUNTO-->   
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="problema">Reportar problema</option>
+                        </select>
+                        <div class="error" id="errorAsunto"></div>
+                    </div>
+                <!--MENSAJE-->   
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                        <div class="error" id="errorMensaje"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+                
+                <div class="success-message" id="successMessage">
+                    ¡Gracias por tu mensaje! Te contactaremos pronto.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MiSitioWeb. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
